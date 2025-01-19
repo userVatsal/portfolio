@@ -1,4 +1,4 @@
-/* Reset and Global Styles */
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +6,8 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Inter', sans-serif;
+    background-color: #f2f4f7;
     color: #333;
 }
 
@@ -37,7 +37,7 @@ a {
 
 .navbar .logo {
     font-family: 'Space Mono', monospace;
-    font-size: 24px;
+    font-size: 26px;
     color: #fff;
 }
 
@@ -51,11 +51,15 @@ a {
     color: #fff;
     font-weight: 500;
     font-size: 18px;
-    transition: color 0.3s;
+    position: relative;
+    padding-bottom: 5px;
+    transition: all 0.3s ease;
 }
 
 .nav-links li a:hover {
     color: #50b3a2;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #50b3a2;
 }
 
 /* Hero Section */
@@ -64,11 +68,14 @@ a {
     color: white;
     padding: 100px 0;
     text-align: center;
+    border-bottom-left-radius: 30% 50px;
+    border-bottom-right-radius: 30% 50px;
 }
 
 .hero h1 {
-    font-size: 48px;
-    font-weight: 500;
+    font-size: 56px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 .hero p {
@@ -84,7 +91,9 @@ a {
 
 .about h2 {
     text-align: center;
+    font-size: 32px;
     margin-bottom: 30px;
+    font-weight: 600;
 }
 
 .about-content {
@@ -95,55 +104,90 @@ a {
 
 .profile-image {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
-    margin-right: 30px;
+    margin-right: 40px;
+    border: 4px solid #50b3a2;
 }
 
-.about-content p {
+.about-text {
+    max-width: 650px;
+}
+
+.about-text p {
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.7;
+    color: #666;
 }
 
 /* Projects Section */
 .projects {
-    padding: 80px 0;
-    background-color: #f4f4f4;
+    padding: 100px 0;
+    background-color: #f9f9f9;
 }
 
 .projects h2 {
     text-align: center;
+    font-size: 32px;
     margin-bottom: 40px;
+    font-weight: 600;
 }
 
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 30px;
 }
 
 .project-card {
-    background-color: white;
+    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.project-card h3 {
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-card-header {
+    background-color: #50b3a2;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-card-header h3 {
     font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-card-header p {
+    font-size: 18px;
+}
+
+.project-card-body {
+    padding: 20px;
+}
+
+.project-card-body p {
+    font-size: 16px;
+    color: #666;
     margin-bottom: 15px;
 }
 
 .project-card button {
-    background-color: #50b3a2;
-    color: white;
     padding: 10px 20px;
+    background-color: #50b3a2;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
     transition: background-color 0.3s ease;
 }
 
@@ -151,33 +195,39 @@ a {
     background-color: #4f86f0;
 }
 
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
 /* Contact Section */
 .contact {
     padding: 80px 0;
+    background-color: #fff;
 }
 
 .contact h2 {
     text-align: center;
+    font-size: 32px;
     margin-bottom: 30px;
+    font-weight: 600;
 }
 
 .contact-form {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     padding: 15px;
     font-size: 16px;
     border: 2px solid #ddd;
     border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #50b3a2;
 }
 
 .contact-form button {
@@ -188,6 +238,7 @@ a {
     border-radius: 8px;
     cursor: pointer;
     font-size: 18px;
+    transition: background-color 0.3s ease;
 }
 
 .contact-form button:hover {
@@ -200,6 +251,10 @@ a {
     color: white;
     padding: 20px 0;
     text-align: center;
+}
+
+.footer p {
+    font-size: 16px;
 }
 
 /* Responsive Design */
