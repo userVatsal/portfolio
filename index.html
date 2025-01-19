@@ -7,7 +7,7 @@
     <title>Vatsal Pareshkumar's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header Section -->
@@ -37,9 +37,9 @@
         <div class="container">
             <h2>About Me</h2>
             <div class="about-content">
-                <img src="profile.jpg" alt="Vatsal Pareshkumar Profile Picture" class="profile-image">
-                <div>
-                    <p>Hi, I'm Vatsal Pareshkumar. I am a web developer and designer with a passion for creating clean and functional websites. I love working on innovative solutions and constantly learning new technologies to improve my skills.</p>
+                <img src="profile.jpg" alt="Vatsal Pareshkumar Profile" class="profile-image">
+                <div class="about-text">
+                    <p>I'm a web developer with a passion for creating beautiful and functional websites. I enjoy working with cutting-edge technologies, solving problems, and delivering clean, efficient solutions. My expertise lies in HTML, CSS, JavaScript, and responsive design.</p>
                 </div>
             </div>
         </div>
@@ -51,14 +51,24 @@
             <h2>My Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>This is a web development project that demonstrates my skills in HTML, CSS, and JavaScript.</p>
-                    <button onclick="showAlert('Project 1 details')">View Details</button>
+                    <div class="project-card-header">
+                        <h3>Project 1</h3>
+                        <p>Web Development</p>
+                    </div>
+                    <div class="project-card-body">
+                        <p>This project showcases a responsive website built using modern web technologies.</p>
+                        <button onclick="showAlert('Project 1 details')">View Details</button>
+                    </div>
                 </div>
                 <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>A mobile-responsive website I built to improve user experience on mobile devices.</p>
-                    <button onclick="showAlert('Project 2 details')">View Details</button>
+                    <div class="project-card-header">
+                        <h3>Project 2</h3>
+                        <p>UI/UX Design</p>
+                    </div>
+                    <div class="project-card-body">
+                        <p>A sleek, mobile-friendly design for a portfolio website.</p>
+                        <button onclick="showAlert('Project 2 details')">View Details</button>
+                    </div>
                 </div>
             </div>
         </div>
