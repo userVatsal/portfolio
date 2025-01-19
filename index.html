@@ -3,41 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Vatsal Pareshkumar's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section id="about">
-        <h1>About Me</h1>
-        <p>Welcome to my portfolio!</p>
-    </section>
-    <section id="projects">
-        <h1>Projects</h1>
-        <div class="project-card">
-            <h3>Project 1</h3>
-            <p>Description of Project 1</p>
-        </div>
-        <div class="project-card">
-            <h3>Project 2</h3>
-            <p>Description of Project 2</p>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h1>About Me</h1>
+            <p>Hi, I'm Vatsal Pareshkumar, a passionate programmer and designer. I love building websites and applications to make people's lives easier. Welcome to my portfolio!</p>
+            <img src="profile.jpg" alt="Profile picture of Vatsal Pareshkumar">
         </div>
     </section>
-    <section id="contact">
-        <h1>Contact</h1>
-        <p>Get in touch with me!</p>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h1>Projects</h1>
+            <div class="project-cards">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>This is a project I worked on that demonstrates my skills in web development.</p>
+                    <button class="project-btn" onclick="showAlert('Project 1 details')">View Details</button>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>This project focuses on creating a dynamic web application.</p>
+                    <button class="project-btn" onclick="showAlert('Project 2 details')">View Details</button>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h1>Contact</h1>
+            <p>Feel free to reach out to me for any inquiries or opportunities.</p>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 My Portfolio</p>
+        <div class="container">
+            <p>&copy; 2025 Vatsal Pareshkumar. All rights reserved.</p>
+        </div>
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
