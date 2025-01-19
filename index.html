@@ -3,57 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vatsal Pareshkumar's Portfolio - Web Developer & Designer">
     <title>Vatsal Pareshkumar's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Space+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header Section -->
-    <header>
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">Vatsal</a>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
-    <!-- About Me Section -->
-    <section id="about" class="section">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Hi, I'm Vatsal</h1>
+            <p>A passionate Web Developer & Designer</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
         <div class="container">
-            <h1>About Me</h1>
-            <p>Hi, I'm Vatsal Pareshkumar, a passionate programmer and designer. I love building websites and applications to make people's lives easier. Welcome to my portfolio!</p>
-            <img src="profile.jpg" alt="Profile picture of Vatsal Pareshkumar">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="profile.jpg" alt="Vatsal Pareshkumar Profile Picture" class="profile-image">
+                <div>
+                    <p>Hi, I'm Vatsal Pareshkumar. I am a web developer and designer with a passion for creating clean and functional websites. I love working on innovative solutions and constantly learning new technologies to improve my skills.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
+    <section id="projects" class="section projects">
         <div class="container">
-            <h1>Projects</h1>
-            <div class="project-cards">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
                 <div class="project-card">
                     <h3>Project 1</h3>
-                    <p>This is a project I worked on that demonstrates my skills in web development.</p>
-                    <button class="project-btn" onclick="showAlert('Project 1 details')">View Details</button>
+                    <p>This is a web development project that demonstrates my skills in HTML, CSS, and JavaScript.</p>
+                    <button onclick="showAlert('Project 1 details')">View Details</button>
                 </div>
                 <div class="project-card">
                     <h3>Project 2</h3>
-                    <p>This project focuses on creating a dynamic web application.</p>
-                    <button class="project-btn" onclick="showAlert('Project 2 details')">View Details</button>
+                    <p>A mobile-responsive website I built to improve user experience on mobile devices.</p>
+                    <button onclick="showAlert('Project 2 details')">View Details</button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="section contact">
         <div class="container">
-            <h1>Contact</h1>
-            <p>Feel free to reach out to me for any inquiries or opportunities.</p>
-            <form id="contact-form">
+            <h2>Contact</h2>
+            <form id="contact-form" class="contact-form">
                 <input type="text" id="name" placeholder="Your Name" required>
                 <input type="email" id="email" placeholder="Your Email" required>
                 <textarea id="message" placeholder="Your Message" required></textarea>
@@ -63,7 +78,7 @@
     </section>
 
     <!-- Footer Section -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Vatsal Pareshkumar. All rights reserved.</p>
         </div>
